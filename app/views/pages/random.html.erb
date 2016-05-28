@@ -1,0 +1,7 @@
+<div class="random_page_heading"><h1>Random Picture Generator</h1></div>
+
+<p>
+  <%= image_tag(@idea.picture_url, :width => 600) if @idea.picture.present? %>
+</p>
+
+<div class="random_button"><%= link_to 'Press this button', pages_random_path %></div>
